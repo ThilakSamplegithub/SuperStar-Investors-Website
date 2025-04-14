@@ -2,7 +2,7 @@ const cardData = [
   {
     title: "🔍 View All Portfolios in One Place",
     desc: "No more revisiting the same pages—instantly see multiple elite investors’ portfolios together, saving time and avoiding manual stock checks.",
-  },
+  } ,
   {
     title: "📈 Boosts Investment Decision-Making",
     desc: "By revealing stocks commonly held by successful investors, the extension helps you increase the probability of making winning picks.",
