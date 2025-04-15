@@ -92,9 +92,14 @@ The extension only works if you start scraping from page 1 of the table.
   },
   {
     question:'📌 What websites is this extension best suited for?',
-    answer:`Works best with: Trendlyne US (Superstar Portfolios), Trade Brains, and Univest (Indian portfolios with prices).
-Trendlyne India is popular, but prices are missing.
-⚡ More sites coming soon — 📩 Suggest yours via the contact form!`
+    answer:`Works best with: 
+  <a style="text-decoration:none" href="https://trendlyne.com/us/portfolio/superstar-shareholders/index/" target="_blank" rel="noopener noreferrer"><strong>Trendlyne US</strong></a> (Superstar Portfolios),
+  <a style="text-decoration:none" href="https://trendlyne.com/portfolio/superstar-shareholders/index/" target="_blank" rel="noopener noreferrer"><strong>Trendlyne INDIA</strong></a> (Superstar Portfolios),
+  <a style="text-decoration:none" href="https://portal.tradebrains.in/superstars" target="_blank" rel="noopener noreferrer"><strong>Trade Brains</strong></a> (Superstar Portfolio),
+  and 
+  <a style="text-decoration:none" href="https://univest.in/shark-portfolios" target="_blank" rel="noopener noreferrer"><strong>Univest</strong></a> (Shark portfolios).<br>
+  Trendlyne India is popular, but prices are missing.<br>
+  ⚡ More sites coming soon — 📩 Suggest yours via the contact form!`
   },
   {question:"📌 Does this extension work on mobile?",
     answer:"No, Chrome extensions are not supported on mobile devices."
