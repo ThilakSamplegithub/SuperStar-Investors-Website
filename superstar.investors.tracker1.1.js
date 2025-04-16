@@ -94,6 +94,7 @@ The extension only works if you start scraping from page 1 of the table.
     question:'📌 What websites is this extension best suited for?',
     answer:`Works best with: 
   <a style="text-decoration:none" href="https://trendlyne.com/us/portfolio/superstar-shareholders/index/" target="_blank" rel="noopener noreferrer"><strong>Trendlyne US</strong></a> (Superstar Portfolios),
+    <a style="text-decoration:none" href="https://hedgefollow.com/" target="_blank" rel="noopener noreferrer"><strong>HedgeFollow</strong></a> (Top Searched Hedge Funds),
   <a style="text-decoration:none" href="https://trendlyne.com/portfolio/superstar-shareholders/index/" target="_blank" rel="noopener noreferrer"><strong>Trendlyne INDIA</strong></a> (Superstar Portfolios),
   <a style="text-decoration:none" href="https://portal.tradebrains.in/superstars" target="_blank" rel="noopener noreferrer"><strong>Trade Brains</strong></a> (Superstar Portfolio),
   and 
