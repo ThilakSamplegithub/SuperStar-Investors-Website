@@ -46,7 +46,7 @@ nav {
       gap:2%;
       /* margin-top: 2rem; */
       &>img{
-        border:2px solid saddlebrown;
+        border:0px solid saddlebrown;
         border-radius: 10px;
       }
       &>span{
@@ -688,7 +688,7 @@ padding:0.5rem;
 #footer>div>div:nth-child(2) li{
   padding:0.3rem;
 }
-#footer>div>div:last-child {
+#footer>div>div:nth-child(3) {
   /* margin-left:-14rem; */
   &>ul>li>h5{
     font-size: 20px;
@@ -701,4 +701,13 @@ padding:0.5rem;
 text-decoration: none;
 }
 }
-
+#footer>div>div:last-child{
+  & p{
+    all:unset;
+    color:white;
+    & a{
+      text-decoration: none; 
+      color:black
+    }
+  }
+}
