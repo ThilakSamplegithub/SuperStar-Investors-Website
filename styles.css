@@ -163,12 +163,6 @@ header {
       border:0px solid red;
     }
   }
-  @media (width<=320px) {
-    & >h1{
-      font-size: 33px;
-      border: 0px solid red;
-    }
-  }
   & > p {
     color: #6b7280;
     font-size: 18px;
