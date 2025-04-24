@@ -74,6 +74,47 @@ stepsData.reverse().forEach((item,i) => {
   reference.insertAdjacentHTML("afterend", stepHTML);
 });
 const faq=[
+  {question:"📌 Who is this extension for ?",
+answer:`<ul style="margin-left:1rem; padding-left:1rem; list-style-type: disc;">
+        <li>Indian & U.S. retail investors looking for <strong>confidence in stock picking</strong></li>
+        <li>If you invest — or want to invest — in the stock market</li>
+        <li>If you're ambitious about becoming <strong>financially free</strong></li>
+        <li>If you don’t believe in <em>lottery wins</em> or <em>instant returns</em></li>
+        <li>If you’re someone who can stay calm when the market tests your patience</li>
+      </ul>
+
+      <blockquote style="font-style: italic; margin: 1rem 0; padding-left: 1rem; border-left: 3px solid #ccc;">
+        “Unless you can watch your stock holdings decline by 50% without becoming panic-stricken, you should not be in the stock market.”<br>
+        — <strong>Warren Buffett</strong>
+      </blockquote>
+
+      <p>
+        For example: I once bought <strong>Palred Tech</strong> at ₹27. When COVID hit, it fell to ₹8 — a <strong>71% drop</strong>. 
+        I held on. And later sold at ₹91.
+        <br>This happened frequently with my other stocks too. I was <strong>concerned but not in panic</strong>.
+      </p>
+
+      <p>
+        One of my stock,Edelweiss Financial Services dropped down to  a <strong>50%</strong> compared to my entry price.
+        Still, I didn’t sell. It climbed again to <strong>a 350%<strong>, then <strong>plunged to under 200%</strong> due to <em>tax war concerns</em>.
+      </p>
+      <p>
+        Am I panicked? <strong>No.</strong> Am I concerned? <strong>Yes.</strong>
+        But that’s <em>healthy fear</em> — the kind that keeps us alert and wise — just like when we try to cross a busy road in heavy traffic.
+      </p>
+
+      <blockquote style="font-style: italic; margin: 1rem 0; padding-left: 1rem; border-left: 3px solid #ccc;">
+        “Reality of the world is based on probabilities and chances.”
+      </blockquote>
+
+      <p>
+        If you believe identifying where <strong>top investors converge</strong> increases your odds of picking winners — this extension is for you.
+      </p>
+
+      <p>
+        Anyone who believes in <strong>following the wisdom of experience</strong>.
+      </p>`
+  },
   {question:"📌 Can I expect additional features in the future?",
     answer:`Yes — you can expect powerful features soon! 🚀
     This tool aims to help value-driven investors make informed decisions.`
