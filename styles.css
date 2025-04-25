@@ -469,7 +469,7 @@ header {
       }
   }
   & >.right{
-      border:1px solid blue;
+      border:0px solid blue;
       flex-basis: 50%;
       display: flex;
       align-items: center;
