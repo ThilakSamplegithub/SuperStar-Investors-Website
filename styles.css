@@ -23,7 +23,7 @@ nav {
    & a{
     text-decoration: none;
    }
-  @media (width<=768px) {
+  @media (max-width:768px) {
     display: block;
     position: static;
   }
@@ -39,7 +39,7 @@ nav {
   }
   &>#bigLogo{
     display: none;
-    @media (width<=768px) {
+    @media (max-width:768px) {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -62,7 +62,7 @@ nav {
   }
   &>button{
     display: none;
-    @media (width<=768px) {
+    @media (max-width:768px) {
       display: block;
       margin: auto;
       border:none;
@@ -72,7 +72,7 @@ nav {
   }
   &>ul{
     display: none;
-    @media (width<=768px) {
+    @media (max-width:768px) {
      display: block; 
      &>li{
       border:0px solid red;
@@ -89,13 +89,13 @@ nav {
   }
   
   &>div{
-    @media (width<=768px) {
+    @media (max-width:768px) {
       display: none;
     }
   }
   &>#smallLogo{
     border:0px solid red;
-    @media (width<=768px) {
+    @media (max-width:768px) {
       display: none;
     }
   }
@@ -143,7 +143,7 @@ nav {
 
 header {
   margin-top: 6rem;
-  @media (width<=768px) {
+  @media (max-width:768px) {
     margin-top:6rem;
   }
   border: 0px solid red;
@@ -157,7 +157,7 @@ header {
   & > h1 {
     color: #000000;
   }
-  @media (width<=480px) {
+  @media (max-width:480px) {
     & >h1{
       font-size: 64px;
       border:0px solid red;
@@ -245,7 +245,7 @@ header {
         &>.smallScreen{
           display: none;
         }
-        @media (width<=440px) {
+        @media (max-width:440px) {
           /* &>h2{
             display: none;
           }
@@ -261,7 +261,7 @@ header {
           } */
         }
     }
-    @media (width<=420px) {
+    @media (max-width:420px) {
       & >div:nth-child(1){
         /* margin:auto;
         text-align: center; */
@@ -282,17 +282,17 @@ header {
             height: 400px;
             background-color: transparent;
             perspective: 1000px;
-            @media (width<=742px) {
+            @media (max-width:742px) {
               width: 100%;
               height: 400px;
               margin-bottom: 20px;
             }
           }
-          @media (width<=1031px) {
+          @media (max-width:1031px) {
             flex-wrap: wrap;
             padding:6rem;
           }
-          @media (width<=742px) {
+          @media (max-width:742px) {
             flex-direction: column;
             padding:4rem 2rem;
             align-items: center;
@@ -408,7 +408,7 @@ header {
   gap:2%;
   height:auto;
   padding:5rem;
-  @media (width<=1026px) {
+  @media (max-width:1026px) {
       /* flex-direction: column; */
       /* flex-wrap: wrap; */
       display: block;
@@ -479,7 +479,7 @@ header {
           border-radius: 50%;
           scale: 1;
           transition: all 0.5s ease-in;
-          @media (width<=1026px) {
+          @media (max-width:1026px) {
               border:0px solid;
             width: 100%;
             height: 640px;
@@ -663,12 +663,12 @@ form textarea {
   gap:10%;
   margin-left: 8%;
 }
-@media (width<=1115px) {
+@media (max-width:1115px) {
   #footer>div{
     margin-left: 1%;
   }
 }
-@media (width<=768px) {
+@media (max-width:768px) {
   #footer>div{
     flex-direction: column;
     align-items: flex-start;
@@ -684,7 +684,7 @@ form textarea {
 #footer>div>div:first-child{
   max-width:480px
 }
-@media (width<=768px) {
+@media (max-width:768px) {
   #footer>div{
     padding:80px 0px
   }
@@ -711,7 +711,7 @@ padding:0.5rem;
   letter-spacing: 1px;
   font-size:20px;
 }
-@media (width<=768px) {
+@media (max-width:768px) {
   #footer>div>div:nth-child(1)>div span{
   font-weight: 550;
   font-size: 33px;
