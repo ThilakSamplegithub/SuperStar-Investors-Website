@@ -153,24 +153,20 @@ The extension only works if you start scraping from page 1 of the table.
     answer:"Yes, you can download the data as a CSV or XLSX file, or use the 'Copy All' option to paste it directly from your clipboard."
   },
 ]
-
-const faqContainer = document.querySelector("#faq>.faq-container>h1");
-
-faq.forEach((el, index) => {
-  const id = `faq-question-${index}`; // unique id for each FAQ
-  faqContainer.insertAdjacentHTML('afterend', `
-    <div class="faq-item">
-      <button class="faq-question" id="${id}">
-        ${el.question}
-        <span class="arrow">&#9660;</span>
-      </button>
-      <div class="faq-answer">
-        <p>${el.answer}</p>
-      </div>
-    </div>
-  `);
-});
-
+const faqContainer=document.querySelector("#faq>.faq-container>h1")
+faq.forEach(el=>{
+  faqContainer.insertAdjacentHTML('afterend',`<div class="faq-item">
+          <button class="faq-question">
+            ${el.question}
+            <span class="arrow">&#9660;</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              ${el.answer}
+            </p>
+          </div>
+        </div>`)
+})
 document.addEventListener('DOMContentLoaded', function () {
   const menuToggle = document.getElementById('menu-toggle');
   const navMenu = document.getElementById('nav-menu');
@@ -185,19 +181,14 @@ const faqQuestions = document.querySelectorAll('.faq-question');
 
 // Loop through each question button
 faqQuestions.forEach((question,index) => {
+  const answer = question.nextElementSibling;
+  if(question.textContent.includes('What websites is this extension best suited for?')){
+    question.classList.add('active')
+    answer.style.maxHeight = answer.scrollHeight + 'px';
+  }
     // Add a click event listener to each question
-
-    const answer = question.nextElementSibling;
-     // Open the main question by default
-     if (question.textContent.includes('What websites is this extension best suited for?')  ) {
-      // console.log()
-      question.classList.add('shimmer')
-      question.classList.add('active');
-      answer.style.maxHeight = answer.scrollHeight + 'px';
-    }
     question.addEventListener('click', () => {
         // Close any other open answers except the one clicked
-        // Open the first question by default
         faqQuestions.forEach(item => {
             if (item !== question) {
                 item.classList.remove('active'); // Remove 'active' class to reset arrow rotation
@@ -209,7 +200,7 @@ faqQuestions.forEach((question,index) => {
         question.classList.toggle('active');
 
         // Select the corresponding answer div
-        const answer = question.nextElementSibling;
+        // const answer = question.nextElementSibling;
 
         // Check if the answer is already open
         if (answer.style.maxHeight) {
@@ -220,9 +211,7 @@ faqQuestions.forEach((question,index) => {
             answer.style.maxHeight = answer.scrollHeight + 'px';
         }
     });
-    
 });
-
  const form=document.querySelector('form')
  const input_email=document.getElementById("input-email")
  let email=''

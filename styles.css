@@ -525,14 +525,6 @@ header {
   background-color: #d0d7de; /* Slightly darker gray on hover */
 }
 
-@keyframes shine {
-  0% {
-    background-position: -100% center;
-  }
-  100% {
-    background-position: 100% center;
-  }
-} */
 
 /* Style for the arrow icon */
 .faq-question .arrow {
