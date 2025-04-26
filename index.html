@@ -265,5 +265,16 @@
       </div>
     </footer>
     <script src="superstar.investors.tracker1.1.js"></script>
+    <script>
+      window.addEventListener('load', () => {
+        if (window.location.hash === '#faq') {
+          const faqSection = document.getElementById('faq');
+          if (faqSection) {
+            faqSection.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      });
+    </script>
+    
   </body>
 </html>
