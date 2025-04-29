@@ -73,6 +73,49 @@ stepsData.reverse().forEach((item,i) => {
   `;
   reference.insertAdjacentHTML("afterend", stepHTML);
 });
+const websites = [
+  {
+    name: "Trendlyne US",
+    url: "https://trendlyne.com/us/portfolio/superstar-shareholders/index/",
+    investorType: "Superstar Investors",
+    region: "US"
+  },
+  {
+    name: "HedgeFollow",
+    url: "https://hedgefollow.com/",
+    investorType: "Top Hedge Funds",
+    region: "US"
+  },
+  {
+    name: "Trendlyne India",
+    url: "https://trendlyne.com/portfolio/superstar-shareholders/index/",
+    investorType: "Superstar Investors",
+    region: "India"
+  },
+  {
+    name: "Trade Brains",
+    url: "https://portal.tradebrains.in/superstars",
+    investorType: "Superstar Portfolio",
+    region: "India"
+  },
+  {
+    name: "Univest",
+    url: "https://univest.in/shark-portfolios",
+    investorType: "Shark Portfolios",
+    region: "India"
+  }
+];
+
+const tableRows = websites.map(site => {
+  return `
+    <tr>
+      <td style="border: 1px solid #ccc; padding: 8px;"><a href="${site.url}" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><strong>${site.name}</strong></a></td>
+      <td style="border: 1px solid #ccc; padding: 8px;">${site.region}</td>
+      <td style="border: 1px solid #ccc; padding: 8px;">${site.investorType}</td>
+    </tr>
+  `;
+}).join('');
+
 const faq=[
   {question:"📌 Who is this extension for ?",
 answer:`<ul style="margin-left:1rem; padding-left:1rem; list-style-type: disc;">
@@ -132,16 +175,29 @@ The extension only works if you start scraping from page 1 of the table.
 ✅ Scraping from the middle or end won’t trigger the process.`
   },
   {
-    question:'📌 What websites is this extension best suited for?',
-    answer:`Works best with: 
-  <a style="text-decoration:none" href="https://trendlyne.com/us/portfolio/superstar-shareholders/index/" target="_blank" rel="noopener noreferrer"><strong>Trendlyne US</strong></a> (Superstar Portfolios),
-    <a style="text-decoration:none" href="https://hedgefollow.com/" target="_blank" rel="noopener noreferrer"><strong>HedgeFollow</strong></a> (Top Searched Hedge Funds),
-  <a style="text-decoration:none" href="https://trendlyne.com/portfolio/superstar-shareholders/index/" target="_blank" rel="noopener noreferrer"><strong>Trendlyne INDIA</strong></a> (Superstar Portfolios),
-  <a style="text-decoration:none" href="https://portal.tradebrains.in/superstars" target="_blank" rel="noopener noreferrer"><strong>Trade Brains</strong></a> (Superstar Portfolio),
-  and 
-  <a style="text-decoration:none" href="https://univest.in/shark-portfolios" target="_blank" rel="noopener noreferrer"><strong>Univest</strong></a> (Shark portfolios).<br>
-  Trendlyne India is popular, but prices are missing.<br>
-  ⚡ More sites coming soon — 📩 Suggest yours via the contact form!`
+    
+      question: '📌 What websites is this extension best suited for?',
+      answer: `
+        <p>This extension is designed to work best with platforms that showcase portfolios of <strong>top investors</strong> (referred to as "Superstars", "Sharks", etc.) from both <strong>India</strong> and the <strong>United States</strong>.</p>
+    
+        <table style="width:100%; border-collapse: collapse; margin: 1rem 0;">
+          <thead>
+            <tr>
+              <th style="border: 1px solid #ccc; padding: 8px;">Website</th>
+              <th style="border: 1px solid #ccc; padding: 8px;">Country</th>
+              <th style="border: 1px solid #ccc; padding: 8px;">Focus</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${tableRows}
+          </tbody>
+        </table>
+    
+        <p><strong>Note:</strong> "Superstar" and "Shark" are terms used by these platforms to represent top-performing investors in their respective countries.</p>
+        <p>🔁 More platforms will be supported in future updates. Have a suggestion? 📩 Submit via the Contact Form!</p>
+      `
+    
+    
   },
   {question:"📌 Does this extension work on mobile?",
     answer:"No, Chrome extensions are not supported on mobile devices."
