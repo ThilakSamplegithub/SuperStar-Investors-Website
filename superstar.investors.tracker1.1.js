@@ -43,13 +43,13 @@ cardData.forEach(card => {
 });
 const stepsData=[
   {title:"Install the Extension",
-    desc:`Search for the Common Stock Finder extension in the Chrome Web Store, and install it to simplify your investing research by identifying common stock picks across top investors’ portfolios.`
+    desc:`Search for the Superstar Investors Tracker extension in the Chrome Web Store, and install it to simplify your investing research by identifying common stock picks across top investors’ portfolios.`
   },
   {title:"Open an Investor's Portfolio Page",
-    desc:`Visit any trusted investment website displaying elite investors’ stock portfolios.Then Visit a superstar investor’s portfolio page of your choice.`
+    desc:`Navigate to a trusted website that displays public holdings of top investors. (For a list of supported websites, refer to the FAQ section on our official site.)`
   },
   {title:"Activate the Extension",
-    desc:`Click on the extension icon in your browser toolbar. In the popup, click the "Scrape" button to extract the stock data from the current portfolio.`
+    desc:`Click the extension icon in your browser toolbar. Hit the "Scrape" button in the popup to extract the portfolio data from a specific top investor's page.`
   },
   {title:"Repeat for More Portfolios",
     desc:`Navigate to another investor's portfolio page and click "Scrape" again. With each scrape, the extension compares and displays common stock picks across all collected portfolios.`
