@@ -192,6 +192,18 @@ header {
     }
   }
 }
+#extensionDemo{
+  max-width: 50%;
+  height: auto;
+  border-radius: 12px;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+ @media (width <= 600px) {
+     #extensionDemo {
+       border:0px solid red;
+       max-width: 100%;
+     }
+}
 
 #features {
   max-width: 100%;
